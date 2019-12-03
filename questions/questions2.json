@@ -1,0 +1,84 @@
+{
+	"questions": [
+	    {
+			"question": "How many NBA titles Michael Jordan won",
+			"answer": ["2","4","7","6"],
+			"correct": "6"
+		},
+		{
+			"question": "Diego Maradona ended his career in what club",
+			"answer": ["Napoli","Barcelona","Juventus","Boca Juniors"],
+			"correct": "Boca Juniors"
+		},
+		{
+			"question": "Roger Federer won how many Grand Slam's in his career by the end of 2019 season",
+			"answer": ["12","9","16","20"],
+			"correct": "20"
+		},
+		{
+			"question": "How many World Cup titles Germany won",
+			"answer": ["2","5","1","4"],
+			"correct": "4"
+		},
+		{
+			"question": "Who won Champions League 2018",
+			"answer": ["Bayern Munich","Manchester United","Liverpool","Real Madrid"],
+			"correct": "Real Madrid"
+		},{
+			"question": "Who won UEFA Men's Player of the Year award for 2017/18",
+			"answer": ["Cristiano Ronaldo","Kylian Mbappé","Lionel Messi","Luka Modrić"],
+			"correct": "Luka Modrić"
+		},
+		{
+			"question": "Who holds the 100m world record",
+			"answer": ["Carl Lewis","Ben Johnson","Linford Christie","Usain Bolt"],
+			"correct": "Usain Bolt"
+		},
+		{
+			"question": "Who was the champion of the Tour de France from 1999 to 2005",
+			"answer": ["Chris Froome","Cadel Evans","Bernard Hinault","Lance Armstrong"],
+			"correct": "Lance Armstrong"
+		},
+		{
+			"question": "Mike Tyson lost his titles in a fight against",
+			"answer": ["Evander Holyfield","Lennox Lewis","Michael Spinks","Buster Douglas"],
+			"correct": "Buster Douglas"
+		},
+		{
+			"question": "What was the last team Michael Jordan played for",
+			"answer": ["LA Lakers","Chicago Bulls","Detroit Pistons","Washington Wizards"],
+			"correct": "Washington Wizards"
+		},
+		{
+			"question": "Who holds the world record in pole vault",
+			"answer": ["Sergey Bubka","Maksim Tarasov","Sam Kendricks","Renaud Lavillenie"],
+			"correct": "Renaud Lavillenie"
+		},
+		{
+			"question": "How many times has Michael Schumacher been a Formula 1 champion",
+			"answer": ["9","5","3","7"],
+			"correct": "7"
+		},
+		{
+			"question": "How many fights did Muhammad Ali lose during his professional career",
+			"answer": ["1","3","none","5"],
+			"correct": "5"
+		},
+		{
+			"question": "What is the national sport in Japan",
+			"answer": ["Karate","Boxing","Aikido","Sumo Wrestling"],
+			"correct": "Sumo Wrestling"
+		},
+		{
+			"question": "In which country were the first Olympic Games held",
+			"answer": ["Italy","france","Spain","Greece"],
+			"correct": "Greece"
+		},
+		{
+			"question": "What is the largest stadium in the world",
+			"answer": ["Camp Nou","Azteca Stadium in Mexico city","Melbourne Cricket Ground","Rungrado 1st of May Stadium",],
+			"correct": "Rungrado 1st of May Stadium"
+		}
+		
+	]
+}

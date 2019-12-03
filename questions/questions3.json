@@ -1,0 +1,84 @@
+{
+	"questions": [
+	    {
+			"question": "Which city was the capital of Australia from 1901 to 1927",
+			"answer": ["Perth","Brisbane","Sydney","Melbourne"],
+			"correct": "Melbourne"
+		},
+		{
+			"question": "Which Mexican rebel was shot in 1923 and died",
+			"answer": ["Quautlatas","José María Jesús Carbajal","Juan Cortina","Pancho Villa"],
+			"correct": "Pancho Villa"
+		},
+		{
+			"question": "Which French king was called the Sun King",
+			"answer": ["Henry IV","Louis XVI","Louis XV","Louis XIV"],
+			"correct": "Louis XIV"
+		},
+		{
+			"question": "Which city became capital of West-Germany in 1949",
+			"answer": ["Munich","Berlin","Frankfurt","Bonn"],
+			"correct": "Bonn"
+		},
+		{
+			"question": "In which city was the Titanic built",
+			"answer": ["Cork","London","Dublin","Belfast"],
+			"correct": "Belfast"
+		},{
+			"question": "What was the former name of New York",
+			"answer": ["Staaten Eylandt","North Tarrytown","York","New Amsterdam"],
+			"correct": "New Amsterdam"
+		},
+		{
+			"question": "Who discovered Greenland",
+			"answer": ["Ingólfr Arnarson","Diego de Almagro","António de Andrade","Erik de Rode"],
+			"correct": "Erik de Rode"
+		},
+		{
+			"question": "On which island was Napoleon born",
+			"answer": ["Malta","Sardinia","Sicily","Corsica"],
+			"correct": "Corsica"
+		},
+		{
+			"question": "In Which Year Was The Berlin Wall Constructed",
+			"answer": ["1945","1948","1957","1961"],
+			"correct": "1961"
+		},
+		{
+			"question": "What Did The Romans Call Scotland",
+			"answer": ["Galatia","Cambria","Cyrenaica","Caledonia"],
+			"correct": "Caledonia"
+		},
+		{
+			"question": "Who Was Known As Coeur De Lion",
+			"answer": ["Lord Darnley","Edward VI","Harold II","Richard I (The Lionheart)"],
+			"correct": "Richard I (The Lionheart)"
+		},
+		{
+			"question": "Name The Fabulous Winged Horse Of Greek Mythology",
+			"answer": ["Balius","Arion","Notus","Pegasus"],
+			"correct": "Pegasus"
+		},
+		{
+			"question": "Neptune Was The Roman God Of The Oceans, What Name Did The Greeks Use",
+			"answer": ["Hades","Boreas","Apollo","Poseidon"],
+			"correct": "Poseidon"
+		},
+		{
+			"question": "How Many Men Were There In A Roman Legion",
+			"answer": ["8000","4000","3000","6000"],
+			"correct": "6000"
+		},
+		{
+			"question": "Who Was The Second President Of The Usa",
+			"answer": ["Andrew Jackson","James Madison","Thomas Jefferson","John Adams"],
+			"correct": "John Adams"
+		},
+		{
+			"question": "Which Was The Sacred Animal Of Ancient Egypt",
+			"answer": ["Elephant","Horse","Dog","Cat",],
+			"correct": "Cat"
+		}
+		
+	]
+}

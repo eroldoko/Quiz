@@ -1,0 +1,83 @@
+{
+	"questions": [{
+			"name": "Lead Male Role",
+			"movie": "Pulp Fiction",
+			"realName": "John Travolta"
+		},
+		{
+			"name": "Donnie Brasco",
+			"movie": "Donnie Brasco",
+			"realName": "Johnny Depp"
+		},
+		{
+			"name": "Carlito",
+			"movie": "Carlito's Way",
+			"realName": "Al Pacino"
+		},
+		{
+			"name": "Don Vito Corleone",
+			"movie": "Godfather 1",
+			"realName": "Marlon Brando"
+		},
+		{
+			"name": "Superman",
+			"movie": "Man of Steel",
+			"realName": "Henry Cavill"
+		},
+		{
+			"name": "Morpheus",
+			"movie": "Matrix",
+			"realName": "Laurence Fishburne"
+		},
+		{
+			"name": "God",
+			"movie": "Bruce Almighty",
+			"realName": "Morgan Freeman"
+		},
+		{
+			"name": "Don Vito Corleone",
+			"movie": "Godfather 2",
+			"realName": "Robert De Niro"
+		},
+		{
+			"name": "Lead Male Role",
+			"movie": "The Shining",
+			"realName": "Jack Nicholson"
+		},
+		{
+			"name": "the Joker",
+			"movie": "The Dark Knight",
+			"realName": "Heath Ledger"
+		},
+		{
+			"name": "Lead Male Role",
+			"movie": "The Dark Knight",
+			"realName": "Christian Bale"
+		},{
+			"name": "Lead Male Role",
+			"movie": "Joker",
+			"realName": "Joaquin Phoenix"
+		},
+		{
+			"name": "Nacho",
+			"movie": "Nacho Libre",
+			"realName": "Jack Black"
+		},
+		{
+			"name": "Nick",
+			"movie": "The Deer Hunter",
+			"realName": "Christopher Walken"
+		},
+		{
+			"name": "Muhammad Ali",
+			"movie": "The Deer Hunter",
+			"realName": "Will Smith"
+		},
+		{
+			"name": "Max",
+			"movie": "Once Upon a Time in America",
+			"realName": "James Woods"
+		}
+		
+	]
+}

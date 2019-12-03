@@ -1,0 +1,178 @@
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Da|Roboto');
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .quiz {
+        background: url(img/question-mark-background.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .quiz-body {
+        background: rgb(56, 49, 55);
+        margin-top: 90px;
+        padding: 10px 20px 50px 20px;
+        -webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        color: #611BBD;
+        font-family: 'Baloo Da', cursive;
+        font-weight: 900;
+        text-align: center;
+        font-size: 48px;
+        margin: 0;
+    }
+
+    button {
+        color: #ffffff;
+        background-color: #611bbd;
+        border-color: #130269;
+        border-radius: 4px;
+        margin: 0.2em 0;
+        display: block;
+        width: 100%;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #question {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .response {
+        box-shadow: 0 0 10px 5px #888888;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .answer {
+        padding-top: 35px;
+        width: 50%;
+        color: #ffffff;
+        border: 1px solid #611fff;
+        background-color: #611bbd;
+        font-size: 24px;
+        cursor: pointer;
+        height: 110px;
+        text-align: center;
+    }
+
+    .answer:nth-child(1) {
+        float: right;
+    }
+
+    .answer:nth-child(4) {
+        float: right;
+        margin-top: -110px;
+    }
+
+    #result {
+        color: #fff;
+        margin: 0.2em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .correct {
+        background-color: #0c0;
+    }
+
+    .wrong {
+        color: #fff;
+        background-color: #c00;
+    }
+
+    .category {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+    .choice {
+        width: 33%;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .start {
+        color: #fff;
+        margin-top: 80px;
+        display: none;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .blinkGreen {
+        animation: blink 1500ms infinite;
+    }
+
+    #mainCategory {
+        border-radius: 4px;
+        text-transform: uppercase;
+        display: none;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        font-size: 40px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .movies {
+        background: rgb(17, 16, 16);
+        color: #fff;
+    }
+
+    .sport {
+        background: #0c0;
+        color: #fff;
+    }
+
+    .history {
+        background: rgb(180, 29, 29);
+        color: #fff;
+    }
+
+    #timer {
+        font-size: 25px;
+    }
+
+    #info {
+        font-size: 25px;
+    }
+
+    #hiScore {
+        color: rgba(251, 255, 0, 0.911);
+    }
+
+    #start {
+        -webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 6px 3px rgba(2, 2, 2, 0.3);
+        border: none;
+    }
