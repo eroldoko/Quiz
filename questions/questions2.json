@@ -76,7 +76,7 @@
 		},
 		{
 			"question": "What is the largest stadium in the world",
-			"answer": ["Camp Nou","Azteca Stadium in Mexico city","Melbourne Cricket Ground","Rungrado 1st of May Stadium",],
+			"answer": ["Camp Nou","Azteca Stadium in Mexico city","Melbourne Cricket Ground","Rungrado 1st of May Stadium"],
 			"correct": "Rungrado 1st of May Stadium"
 		}
 		

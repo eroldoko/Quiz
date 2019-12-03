@@ -51,8 +51,10 @@ function start() {
                 view.result.textContent = "";
                 view.info.textContent = "";
 
-                $.ajax('https://eroldoko.github.io/Quiz/questions/questions1.json') //Jquery
-                        .done(quiz => {
+                const url = 'https://raw.githubusercontent.com/eroldoko/Quiz/master/questions/questions1.json';
+                fetch(url)
+                        .then(res => res.json())
+                        .then(quiz => {
                                 startQuiz1 = function () {
                                         view.start.removeEventListener('click', startQuiz1);
                                         view.response.addEventListener('click', checkResponse, false);
@@ -60,10 +62,12 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
+
                                 arrayFunc.push(startQuiz1)
                                 rmEventListeners()
                                 view.start.addEventListener('click', startQuiz1, false);
                         });
+
         } else if (event.target.textContent == "sport") {
 
                 if (!localStorage.highScoreSport) {
@@ -83,8 +87,12 @@ function start() {
                 view.info.textContent = "";
                 view.start.textContent = "Start"
 
-                $.ajax('https://eroldoko.github.io/Quiz/questions/questions2.json') //Jquery
-                        .done(quiz => {
+
+
+                const url = 'https://raw.githubusercontent.com/eroldoko/Quiz/master/questions/questions2.json';
+                fetch(url)
+                        .then(res => res.json())
+                        .then(quiz => {
                                 startQuiz2 = function () {
                                         view.start.removeEventListener('click', startQuiz2);
                                         view.response.addEventListener('click', checkResponse, false);
@@ -92,14 +100,14 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
+
                                 arrayFunc.push(startQuiz2)
                                 rmEventListeners()
-
                                 view.start.addEventListener('click', startQuiz2, false);
-                                view.response.addEventListener('click', checkResponse, false);
                         });
+
         } else if (event.target.textContent == "history") {
-                w = event.target.textContent
+               
                 mainCategory.classList.toggle("history")
                 mainCategory.classList.remove('movies', 'sport')
                 mainCategory.style.display = "block"
@@ -115,9 +123,11 @@ function start() {
                 view.score.textContent = "0";
                 view.result.textContent = "";
                 view.info.textContent = "";
-
-                $.ajax('https://eroldoko.github.io/Quiz/questions/questions3.json') //Jquery
-                        .done(quiz => {
+            
+                const url = 'https://raw.githubusercontent.com/eroldoko/Quiz/master/questions/questions3.json';
+                fetch(url)
+                        .then(res => res.json())
+                        .then(quiz => {
                                 startQuiz3 = function () {
                                         view.start.removeEventListener('click', startQuiz3);
                                         view.response.addEventListener('click', checkResponse, false);
@@ -125,11 +135,10 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
+
                                 arrayFunc.push(startQuiz3)
                                 rmEventListeners()
-
                                 view.start.addEventListener('click', startQuiz3, false);
-                                view.response.addEventListener('click', checkResponse, false);
                         });
         }
         choice.forEach(
@@ -226,6 +235,14 @@ const game = {
                         const question = `Who played ${this.question.name} in ${this.question.movie}?`;
                         view.render(view.question, question);
                         view.render(view.response, view.buttons(options1))
+                }else if (mainCategory.textContent == "history") {
+                        shuffle(this.questions);
+                        this.question = this.questions.pop();
+                        const options3 = [this.question.answer[0], this.question.answer[1], this.question.answer[2], this.question.correct];
+                        shuffle(options3);
+                        const question = `${this.question.question}?`;
+                        view.render(view.question, question);
+                        view.render(view.response, view.buttons(options3))
                 }
         },
         check(event) {
@@ -300,7 +317,6 @@ const game = {
                         view.start.textContent = "Start Over or choose other Category"
                         view.start.addEventListener('click', startQuiz3, false);
                 }
-
                 choice.forEach(
                         function (el) {
                                 el.addEventListener('click', start)
