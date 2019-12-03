@@ -76,7 +76,7 @@
 		},
 		{
 			"question": "Which Was The Sacred Animal Of Ancient Egypt",
-			"answer": ["Elephant","Horse","Dog","Cat",],
+			"answer": ["Elephant","Horse","Dog","Cat"],
 			"correct": "Cat"
 		}
 		
