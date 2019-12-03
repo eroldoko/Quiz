@@ -71,7 +71,7 @@
 		},
 		{
 			"question": "In which country were the first Olympic Games held",
-			"answer": ["Italy","france","Spain","Greece"],
+			"answer": ["Italy","France","Spain","Greece"],
 			"correct": "Greece"
 		},
 		{
