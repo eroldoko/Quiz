@@ -62,12 +62,10 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
-
                                 arrayFunc.push(startQuiz1)
                                 rmEventListeners()
                                 view.start.addEventListener('click', startQuiz1, false);
                         });
-
         } else if (event.target.textContent == "sport") {
 
                 if (!localStorage.highScoreSport) {
@@ -87,8 +85,6 @@ function start() {
                 view.info.textContent = "";
                 view.start.textContent = "Start"
 
-
-
                 const url = 'https://raw.githubusercontent.com/eroldoko/Quiz/master/questions/questions2.json';
                 fetch(url)
                         .then(res => res.json())
@@ -100,12 +96,10 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
-
                                 arrayFunc.push(startQuiz2)
                                 rmEventListeners()
                                 view.start.addEventListener('click', startQuiz2, false);
                         });
-
         } else if (event.target.textContent == "history") {
                
                 mainCategory.classList.toggle("history")
@@ -123,7 +117,7 @@ function start() {
                 view.score.textContent = "0";
                 view.result.textContent = "";
                 view.info.textContent = "";
-            
+                
                 const url = 'https://raw.githubusercontent.com/eroldoko/Quiz/master/questions/questions3.json';
                 fetch(url)
                         .then(res => res.json())
@@ -135,7 +129,6 @@ function start() {
                                         opacityInd("-1")
                                         mainCategory.style.display = "block"
                                 }
-
                                 arrayFunc.push(startQuiz3)
                                 rmEventListeners()
                                 view.start.addEventListener('click', startQuiz3, false);
