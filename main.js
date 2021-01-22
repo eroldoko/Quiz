@@ -32,7 +32,7 @@ function opacityInd(zInd) {
         );
 }
 //game start logic,based on chosen category
-function start() {
+function start(event) {
         view.start.textContent = "Start"
         if (event.target.textContent == "movies") {
                 mainCategory.classList.toggle("movies")
@@ -211,7 +211,7 @@ const game = {
                 view.render(view.timer, game.secondsRemaining);
                 this.timer = setInterval(this.countdown, 1000);
         },
-        ask(name) {
+        ask() {
                 if (mainCategory.textContent == "sport") {
                         shuffle(this.questions);
                         this.question = this.questions.pop();
@@ -265,21 +265,23 @@ const game = {
                 setTimeout(askNext, 2000)
 
                 const correctAnswer = this.question.correct;
-                if (response === correctAnswer) {
-                        event.target.classList.add('correct')
-                        this.score++;
-                        view.render(view.score, this.score);
-                }
-                for (let i = 0; i < answerDiv.length; i++) {
+                if (correctAnswer) {
+                   if (response === correctAnswer) {
+                    event.target.classList.add("correct");
+                    this.score++;
+                    view.render(view.score, this.score);
+                } else {
+                   event.target.style.background = "red";
+                    for (let i = 0; i < answerDiv.length; i++) {
                         const element = answerDiv[i];
                         if (element.textContent === correctAnswer) {
-
-                                element.style.background = "green"
-                                element.style.opacity = "0.8"
-                                element.classList.add('blinkGreen')
+                            element.style.background = "green";
+                            element.style.opacity = "0.8";
+                            element.classList.add("blinkGreen");
                         }
+                    }
                 }
-
+            }
         },
         countdown() {
                 game.secondsRemaining--;
@@ -323,7 +325,7 @@ const game = {
                                 localStorage.highScoreMovies = highMovies
                         } else {
                                 const highMovies = localStorage.highScoreMovies
-                                if (this.score > highMovies || highMovies === 0) {
+                                if (this.score > highMovies) {
                                         localStorage.setItem('highScoreMovies', this.score);
                                         view.render(view.info, '** NEW HIGH SCORE! **');
                                 }
@@ -336,7 +338,7 @@ const game = {
                                 localStorage.highScoreSport = highSport
                         } else {
                                 const highSport = localStorage.highScoreSport
-                                if (this.score > highSport || highSport === 0) {
+                                if (this.score > highSport) {
                                         localStorage.setItem('highScoreSport', this.score);
                                         view.render(view.info, '** NEW HIGH SCORE! **');
                                 }
@@ -349,7 +351,7 @@ const game = {
                                 localStorage.highScoreHistory = highHistory
                         } else {
                                 const highHistory = localStorage.highScoreHistory
-                                if (this.score > highHistory || highHistory === 0) {
+                                if (this.score > highHistory) {
                                         localStorage.setItem('highScoreHistory', this.score);
                                         view.render(view.info, '** NEW HIGH SCORE! **');
                                 }
