@@ -243,22 +243,23 @@ const game = {
                 const response = event.target.textContent;
                 const answer = this.question.realName;
 
-                if (response === answer) {
-                        event.target.classList.add('correct')
-                        this.score++;
-                        view.render(view.score, this.score);
+                if (answer) {
+                    if (response === answer) {
+                       event.target.classList.add("correct");
+                       this.score++;
+                       view.render(view.score, this.score);
                 } else {
-                        event.target.style.background = "red"
+                     event.target.style.background = "red";
                         for (let i = 0; i < answerDiv.length; i++) {
-                                const element = answerDiv[i];
-                                if (element.textContent === answer) {
-
-                                        element.style.background = "green"
-                                        element.style.opacity = "0.8"
-                                        element.classList.add('blinkGreen')
-                                }
+                          const element = answerDiv[i];
+                          if (element.textContent === answer) {
+                            element.style.background = "green";
+                            element.style.opacity = "0.8";
+                            element.classList.add("blinkGreen");
+                          }
                         }
-                }
+                      }
+                    }
                 askNext = function () {
                         game.ask()
                 };
